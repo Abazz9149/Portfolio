@@ -8,8 +8,8 @@ export const portfolioData = {
     tagline: "Extensive experience in gameplay programming, multiplayer systems, UI/UX, and Virtual Reality.",
     location: "New Delhi, India",
     email: "ma1243806@gmail.com",
-    github: "#",
-    linkedin: "#"
+    github: "https://github.com/Abazz9149",
+    linkedin: "https://www.linkedin.com/in/mustafa-abbas-237654381?utm_source=share_via&utm_content=profile&utm_medium=member_android"
   },
   skills: {
     languages: ["C", "C++", "C#", "Java", "JavaScript", "Dart (Flutter)", "MERN Stack"],
@@ -44,8 +44,9 @@ export const portfolioData = {
       title: "Car Racing Game",
       category: "Game Dev",
       image: racingProject,
-      description: "Features realistic vehicle physics and intelligent racing agents. Optimized for high frame rates and features multiple tracks.",
-      tags: ["Unity", "C#", "AI"]
+      description: "Features realistic vehicle physics and multiple tracks. Optimized for high frame rates and performance.",
+      tags: ["Unity", "C#"],
+      github: "https://github.com/nullonestudio/Project-Speed-2.git"
     }
   ]
 };

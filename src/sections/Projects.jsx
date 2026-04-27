@@ -70,12 +70,26 @@ const ProjectCard = ({ project, index }) => {
           </div>
 
           <div className="flex gap-4">
-            <button className="p-2 bg-primary/20 rounded-lg hover:bg-primary/40 transition-colors">
-              <GithubIcon size={18} />
-            </button>
-            <button className="p-2 bg-secondary/20 rounded-lg hover:bg-secondary/40 transition-colors">
-              <ExternalLink size={18} />
-            </button>
+            {project.github && (
+              <a 
+                href={project.github} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-2 bg-primary/20 rounded-lg hover:bg-primary/40 transition-colors"
+              >
+                <GithubIcon size={18} />
+              </a>
+            )}
+            {project.external && (
+              <a 
+                href={project.external} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-2 bg-secondary/20 rounded-lg hover:bg-secondary/40 transition-colors"
+              >
+                <ExternalLink size={18} />
+              </a>
+            )}
           </div>
         </div>
       </div>

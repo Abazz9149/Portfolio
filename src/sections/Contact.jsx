@@ -89,6 +89,8 @@ export default function Contact() {
             <div className="flex gap-6 mt-12">
               <motion.a
                 href={github}
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ y: -5 }}
                 className="w-12 h-12 glass rounded-full flex items-center justify-center hover:text-primary transition-colors"
               >
@@ -96,6 +98,8 @@ export default function Contact() {
               </motion.a>
               <motion.a
                 href={linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ y: -5 }}
                 className="w-12 h-12 glass rounded-full flex items-center justify-center hover:text-secondary transition-colors"
               >
