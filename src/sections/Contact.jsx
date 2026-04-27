@@ -46,8 +46,8 @@ export default function Contact() {
   return (
     <section id="contact" className="py-24 px-4 bg-background relative overflow-hidden">
       {/* Decorative Orbs */}
-      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary/20 blur-[120px] rounded-full pointer-events-none" />
-      <div className="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 bg-secondary/20 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-48 md:w-64 h-48 md:h-64 bg-primary/20 blur-[80px] md:blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 right-0 -translate-y-1/2 w-48 md:w-64 h-48 md:h-64 bg-secondary/20 blur-[80px] md:blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
@@ -112,7 +112,7 @@ export default function Contact() {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="glass p-10 rounded-[2rem]"
+            className="glass p-6 sm:p-10 rounded-[2rem]"
           >
             <form ref={form} onSubmit={sendEmail} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

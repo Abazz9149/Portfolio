@@ -6,7 +6,7 @@ export default function Hero() {
   const { name, role, tagline } = portfolioData.personalInfo;
 
   return (
-    <section id="home" className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative h-screen min-h-[100dvh] w-full flex items-center justify-center overflow-hidden">
       <Scene />
       
       <div className="relative z-10 text-center px-4">
@@ -24,16 +24,16 @@ export default function Hero() {
             Welcome to my universe
           </motion.span>
           
-          <h1 className="text-6xl md:text-8xl font-extrabold mb-4 tracking-tighter leading-none">
+          <h1 className="text-5xl sm:text-7xl md:text-8xl font-extrabold mb-4 tracking-tighter leading-none">
             <span className="block">{name.split(' ')[0]}</span>
             <span className="text-gradient">{name.split(' ')[1]}</span>
           </h1>
           
-          <h2 className="text-xl md:text-3xl text-gray-400 font-medium mb-8">
+          <h2 className="text-lg md:text-3xl text-gray-400 font-medium mb-8">
             {role}
           </h2>
           
-          <p className="max-w-xl mx-auto text-gray-500 text-lg mb-10 leading-relaxed">
+          <p className="max-w-xl mx-auto text-gray-500 text-base md:text-lg mb-10 leading-relaxed px-4">
             {tagline}
           </p>
           

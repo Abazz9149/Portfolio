@@ -66,13 +66,13 @@ export default function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden glass border-t border-white/10"
           >
-            <div className="px-4 pt-2 pb-6 space-y-1 sm:px-3">
+            <div className="px-4 pt-4 pb-8 space-y-2 sm:px-3">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="block px-3 py-4 text-base font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all"
+                  className="block px-4 py-4 text-lg font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-xl transition-all"
                 >
                   {link.name}
                 </a>

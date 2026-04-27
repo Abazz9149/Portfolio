@@ -8,7 +8,7 @@ const SkillCard = ({ title, skills, icon: Icon, delay }) => (
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
     transition={{ delay }}
-    className="glass p-8 rounded-3xl group hover:border-primary/50 transition-all duration-500"
+    className="glass p-6 md:p-8 rounded-3xl group hover:border-primary/50 transition-all duration-500"
   >
     <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
       <Icon className="text-primary" size={24} />
